@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* タグに対してスタイルの設定 */
+        html {
+            scroll-behavior: smooth;
+        }
+        h1 {
+            
+        }
+        h2 {
+            
+        }
+        p {
+            
+        }
+        /* id属性に対して設定する */
+        /* id=fixed */
+        #fixed {
+        }
+
+        /* class属性に対して設定する */
+        .right-under {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            
+        }
+        
+        .red {
+            /* 背景色の設定 */
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            
+        }
+        
+        .green:hover {
+    background-color: #ffc9d7;
+    }
+        
+    </style>
+</head>
+
+<body>
+    <h2>問題１</h2>
+    <a href="#toi4">問４へ移動</a>
+    <div style="height: 500px; width: 80%;position:relative;">
+        <div style="position:absolute; bottom:0px;right:0px;">
+            これはabsolute
+        </div>
+    </div>
+    <div class="right-under">
+        これはfixed
+    </div>
+    
+    <h2>問題２ </h2>
+    <p>以下のdivタグの背景を赤くし、１辺が50pxの正方形を作成しなさい</p>
+    <div class="red">
+    </div>
+
+    <h2>問題３</h2>
+    <p class="green">この文章にマウスを当てたら色を緑にしなさい</p>
+    <div class="green">この文章にマウスを当てたら色を緑にしなさい
+    
+    
+    
+    </div>
+    
+    
+    
+    <h2 id="toi4">問題４</h2>
+    <p>血液型を選択するラジオボタンを作成しなさい</p>
+    <!-- ラジオボタンはtype="radio" valueはサーバー側に飛ばす値 -->
+    <input type="radio" name="radio1" value="A型">A型
+    <input type="radio" name="radio1" value="B型">B型
+    <input type="radio" name="radio1" value="O型">O型
+    <input type="radio" name="radio1" value="AB型">AB型
+　　
+　　
+    <h2>問題５</h2>
+    <p>偶数行目の文字の色を灰色にしなさい</p>
+    <ol>
+        <li>あああ</li>
+        <li>いいい</li>
+        <li>ううう</li>
+        <li>えええ</li>
+        <li>おおお</li>
+    </ol>
+    <div style="height: 1000px;">
+        
+    </div>
+</body>
+
+</html>

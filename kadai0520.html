@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 　 <style>
+    p.seotext_00 {
+text-decoration:underline;/*下線を引く */
+text-decoration-color:#FF0000;/*下線を赤色*/
+}
+
+</style>
+
+</head>
+
+<body>
+    <h1>HTML・CSS</h1>
+    <h2>問題１</h2>
+    <p class="seotext_00">この文章に下線を引きなさい</p>
+    <div class="seotext_00">ああああああ</div>
+    <span class="seotext_00">いいいい</span>
+
+    <h2>問題２ </h2>
+    <p>東京、大阪、福岡を選択できるセレクトボックスを作成しなさい</p>
+
+<select name="都道府県">
+  <option value="tokyo">東京都</option>
+  <option value="oosaka">大阪府</option>
+  <option value="fukuoka">福岡県</option>
+</select>
+
+<select name="都道府県" size="3">
+  <option value="tokyo">東京都</option>
+  <option value="oosaka">大阪府</option>
+  <option value="fukuoka">福岡県</option>
+</select>
+
+
+    <h2>問題３</h2>
+    <p>GoogleMapから東京タワーの位置を表示しなさい</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.906969642288!2d139.74414543967282!3d35.65910353236703!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1621592293779!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+    <h1>JavaScript</h1>
+    <h2>問１</h2>
+    <p>ボタンを押したらアラートで「こんにちは」と表示しなさい</p>
+    <button id="toi1">問１</button>
+    <script>
+		document.getElementById('toi1').addEventListener('click', (event) => {
+			alert("こんにちは");
+		});
+    </script>
+
+    <h2>問２</h2>
+    <p>利用規約に同意をチェックしたらボタンを活性にしなさい</p>
+    
+    
+    <input type="checkbox" id="toi2chk">利用規約に同意する <br>
+    <button id="toi2button" disabled>送信</button>
+    
+
+
+
+<div class="policy">
+    <input type="checkbox" id="chkbox4" name="policy_doui" value="1">
+    <label for="chkbox4">「個人情報の取り扱いについて」に同意する</label>
+</div>
+<div class="submit_btnarea">
+    <button type="submit" value="内容を確認する" class="form_btn" id="submit" disabled="disabled">内容を確認する</button>
+</div>
+
+
+
+
+</body>
+
+</html>
